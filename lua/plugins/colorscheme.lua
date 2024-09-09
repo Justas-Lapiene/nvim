@@ -2,11 +2,11 @@ return {
   "Shatur/neovim-ayu",
   config = function()
     local colors = require("ayu.colors")
-    colors.generate() -- Pass `true` to enable mirage
+    colors.generate(false) -- Pass `true` to enable mirage
 
     require("ayu").setup({
       overrides = {
-        IncSearch = { fg = colors.fg },
+        MatchParen = { fg = colors.string, bg = colors.bg, bold = true },
       },
     })
   end,
