@@ -19,7 +19,6 @@ return {
       },
     },
   },
-  { "rafi/awesome-vim-colorschemes" },
   -- {
   --   "ribru17/bamboo.nvim",
   --   lazy = false,
