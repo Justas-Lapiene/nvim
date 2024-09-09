@@ -1,13 +1,21 @@
 return {
-  "Shatur/neovim-ayu",
+  "Justas-Lapiene/neovim-ayu",
   config = function()
     local colors = require("ayu.colors")
     colors.generate(false) -- Pass `true` to enable mirage
 
     require("ayu").setup({
-      overrides = {
-        MatchParen = { fg = colors.string, bg = colors.bg, bold = true },
-      },
+      overrides = function()
+        return {
+          NeoTreeGitModified = { fg = colors.func },
+          MatchParen = { fg = colors.warning, bold = true },
+          NeoTreeDirectoryName = { fg = colors.fg },
+          -- NeoTreeNormal = {},
+          -- NeoTreeGitStagedxxx
+          -- NeoTreeDirectoryIcon
+          -- NeoTreeFileNameOpened
+        }
+      end,
     })
   end,
 }
