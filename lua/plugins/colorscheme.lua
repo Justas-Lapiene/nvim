@@ -10,10 +10,8 @@ return {
           NeoTreeGitModified = { fg = colors.func },
           MatchParen = { fg = colors.warning, bold = true },
           NeoTreeDirectoryName = { fg = colors.fg },
-          -- NeoTreeNormal = {},
-          -- NeoTreeGitStagedxxx
-          -- NeoTreeDirectoryIcon
-          -- NeoTreeFileNameOpened
+          LineNr = { fg = colors.fg },
+          CursorLineNr = { fg = colors.func },
         }
       end,
     })
